@@ -63,9 +63,10 @@ The following are notes on my experience while building this in the style of a f
 		* Based on just digging, I've landed on a `values.yaml` file with this to enable Free mode. I still am not sure if this is correct or not
 			```
 			enterprise:
-  		enabled: true
-  		#license_secret: Left empty to try and enable Free mode
+				enabled: true
+				#license_secret: Left empty to try and enable Free mode
 			```
+
 	* **Harmony**: Once I shifted to GCP I seemed to have made progress and Kong seems to be running in a GKE cluster with the `values.yaml` file located in this repo.
 	* **Friction**: The docs tell me to do this to verify the installation: `kubectl get svc my-kong-kong-admin -n kong --output=jsonpath='{.status.loadBalancer.ingress[0].ip}` to verify the installation, but I don't have this service.  How am I going to get the Admin API IP address without the `my-kong-kong-admin` service?
 
