@@ -13,12 +13,6 @@ Here are the discrete goals:
 * Secure API with Key Auth
 * Apply a rate limit of 10 requests per minute
 
-## Prerequisites
-
-* [jq](https://stedolan.github.io/jq/) for JSON processing
-* A running [Docker](https://www.docker.com/) if using a local K8s cluster
-* [k3d](https://k3d.io/v5.3.0/) if using a local K8s cluster
-
 ## Usage
 
 The repo uses a `Makefile` to automate steps and (warning) all K8s commands use the current context of `kubectl`. 
