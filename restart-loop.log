@@ -1,0 +1,49 @@
+LAST SEEN   TYPE      REASON                 OBJECT                               MESSAGE
+9m3s        Normal    Killing                pod/my-kong-kong-58c7547d47-xrp4p    Stopping container proxy
+9m3s        Normal    Killing                pod/my-kong-kong-58c7547d47-xrp4p    Stopping container ingress-controller
+8m55s       Warning   Unhealthy              pod/my-kong-kong-58c7547d47-xrp4p    Readiness probe failed: Get "http://10.2.128.139:10254/healthz": dial tcp 10.2.128.139:10254: connect: connection refused
+8m55s       Warning   Unhealthy              pod/my-kong-kong-58c7547d47-xrp4p    Liveness probe failed: Get "http://10.2.128.139:10254/healthz": dial tcp 10.2.128.139:10254: connect: connection refused
+8m46s       Warning   FailedPreStopHook      pod/my-kong-kong-58c7547d47-xrp4p    Exec lifecycle hook ([kong quit --wait=15]) for Container "proxy" in Pod "my-kong-kong-58c7547d47-xrp4p_kong(5ffa974a-77fa-43d4-80b6-0dd91b11d27e)" failed - error: command 'kong quit --wait=15' exited with 137: , message: ""
+9m3s        Normal    SuccessfulDelete       replicaset/my-kong-kong-58c7547d47   Deleted pod: my-kong-kong-58c7547d47-xrp4p
+7m32s       Normal    Scheduled              pod/my-kong-kong-6685477498-dfsg8    Successfully assigned kong/my-kong-kong-6685477498-dfsg8 to gk3-rspurgeon-autopilot--nap-d0j80jyf-dadddfc2-ncss
+7m31s       Normal    Pulled                 pod/my-kong-kong-6685477498-dfsg8    Container image "kong:2.8" already present on machine
+7m31s       Normal    Created                pod/my-kong-kong-6685477498-dfsg8    Created container clear-stale-pid
+7m31s       Normal    Started                pod/my-kong-kong-6685477498-dfsg8    Started container clear-stale-pid
+7m5s        Normal    Pulled                 pod/my-kong-kong-6685477498-dfsg8    Container image "kong/kubernetes-ingress-controller:2.2" already present on machine
+7m5s        Normal    Created                pod/my-kong-kong-6685477498-dfsg8    Created container ingress-controller
+7m4s        Normal    Started                pod/my-kong-kong-6685477498-dfsg8    Started container ingress-controller
+7m29s       Normal    Pulled                 pod/my-kong-kong-6685477498-dfsg8    Container image "kong:2.8" already present on machine
+7m29s       Normal    Created                pod/my-kong-kong-6685477498-dfsg8    Created container proxy
+7m28s       Normal    Started                pod/my-kong-kong-6685477498-dfsg8    Started container proxy
+7m20s       Warning   BackOff                pod/my-kong-kong-6685477498-dfsg8    Back-off restarting failed container
+10m         Warning   FailedScheduling       pod/my-kong-kong-6685477498-jcmq7    0/6 nodes are available: 6 Insufficient cpu, 6 Insufficient memory.
+10m         Normal    TriggeredScaleUp       pod/my-kong-kong-6685477498-jcmq7    pod triggered scale-up: [{https://www.googleapis.com/compute/v1/projects/devx-testing/zones/us-central1-b/instanceGroups/gk3-rspurgeon-autopilot--nap-d0j80jyf-6e812800-grp 0->1 (max: 1000)}]
+9m53s       Warning   FailedScheduling       pod/my-kong-kong-6685477498-jcmq7    0/7 nodes are available: 1 node(s) had taint {node.kubernetes.io/not-ready: }, that the pod didn't tolerate, 6 Insufficient cpu, 6 Insufficient memory.
+9m43s       Normal    Scheduled              pod/my-kong-kong-6685477498-jcmq7    Successfully assigned kong/my-kong-kong-6685477498-jcmq7 to gk3-rspurgeon-autopilot--nap-d0j80jyf-6e812800-52h7
+9m42s       Normal    TaintManagerEviction   pod/my-kong-kong-6685477498-jcmq7    Cancelling deletion of Pod kong/my-kong-kong-6685477498-jcmq7
+9m40s       Normal    Pulling                pod/my-kong-kong-6685477498-jcmq7    Pulling image "kong:2.8"
+9m32s       Normal    Pulled                 pod/my-kong-kong-6685477498-jcmq7    Successfully pulled image "kong:2.8" in 8.237205139s
+9m30s       Normal    Created                pod/my-kong-kong-6685477498-jcmq7    Created container clear-stale-pid
+9m30s       Normal    Started                pod/my-kong-kong-6685477498-jcmq7    Started container clear-stale-pid
+9m29s       Normal    Pulling                pod/my-kong-kong-6685477498-jcmq7    Pulling image "kong/kubernetes-ingress-controller:2.2"
+9m27s       Normal    Pulled                 pod/my-kong-kong-6685477498-jcmq7    Successfully pulled image "kong/kubernetes-ingress-controller:2.2" in 1.894218864s
+9m13s       Normal    Created                pod/my-kong-kong-6685477498-jcmq7    Created container ingress-controller
+9m12s       Normal    Started                pod/my-kong-kong-6685477498-jcmq7    Started container ingress-controller
+9m26s       Normal    Pulled                 pod/my-kong-kong-6685477498-jcmq7    Container image "kong:2.8" already present on machine
+9m26s       Normal    Created                pod/my-kong-kong-6685477498-jcmq7    Created container proxy
+9m26s       Normal    Started                pod/my-kong-kong-6685477498-jcmq7    Started container proxy
+9m13s       Normal    Pulled                 pod/my-kong-kong-6685477498-jcmq7    Container image "kong/kubernetes-ingress-controller:2.2" already present on machine
+9m22s       Warning   BackOff                pod/my-kong-kong-6685477498-jcmq7    Back-off restarting failed container
+7m33s       Normal    Killing                pod/my-kong-kong-6685477498-jcmq7    Stopping container proxy
+7m33s       Normal    Killing                pod/my-kong-kong-6685477498-jcmq7    Stopping container ingress-controller
+7m23s       Warning   Unhealthy              pod/my-kong-kong-6685477498-jcmq7    Readiness probe failed: Get "http://10.2.129.130:10254/healthz": dial tcp 10.2.129.130:10254: connect: connection refused
+7m23s       Warning   Unhealthy              pod/my-kong-kong-6685477498-jcmq7    Liveness probe failed: Get "http://10.2.129.130:10254/healthz": dial tcp 10.2.129.130:10254: connect: connection refused
+7m16s       Warning   FailedPreStopHook      pod/my-kong-kong-6685477498-jcmq7    Exec lifecycle hook ([kong quit --wait=15]) for Container "proxy" in Pod "my-kong-kong-6685477498-jcmq7_kong(271f4025-daa9-4219-8316-c9a338825222)" failed - error: command 'kong quit --wait=15' exited with 137: , message: ""
+11m         Normal    SuccessfulCreate       replicaset/my-kong-kong-6685477498   Created pod: my-kong-kong-6685477498-jcmq7
+7m32s       Normal    SuccessfulCreate       replicaset/my-kong-kong-6685477498   Created pod: my-kong-kong-6685477498-dfsg8
+11m         Normal    EnsuringLoadBalancer   service/my-kong-kong-admin           Ensuring load balancer
+10m         Normal    EnsuredLoadBalancer    service/my-kong-kong-admin           Ensured load balancer
+5m49s       Normal    UpdatedLoadBalancer    service/my-kong-kong-admin           Updated load balancer with new hosts
+5m51s       Normal    UpdatedLoadBalancer    service/my-kong-kong-proxy           Updated load balancer with new hosts
+11m         Normal    ScalingReplicaSet      deployment/my-kong-kong              Scaled up replica set my-kong-kong-6685477498 to 1
+9m3s        Normal    ScalingReplicaSet      deployment/my-kong-kong              Scaled down replica set my-kong-kong-58c7547d47 to 0

@@ -1,0 +1,26 @@
+image:
+  repository: kong
+  tag: "2.8"
+
+postgresql:
+  enabled: true
+
+enterprise:
+  enabled: true
+  #license_secret: Left empty to try and enable Free mode
+
+env:
+  prefix: /kong_prefix/
+  database: postgres
+
+ingressController:
+  enabled: true
+  installCRDs: false
+
+admin:
+  enabled: true
+  type: LoadBalancer
+  http:
+    enabled: true
+  tls:
+    enabled: false

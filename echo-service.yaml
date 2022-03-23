@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/name: echo
+    app.kubernetes.io/version: 0.0.1
+  name: echo
+spec:
+  ports:
+    - name: web
+      port: 80
+      targetPort: 5678
+  selector:
+    app.kubernetes.io/name: echo 
+    app.kubernetes.io/version: 0.0.1
+  type: ClusterIP
